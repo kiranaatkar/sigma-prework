@@ -14,3 +14,7 @@ Official Date documentation
 
 W3Schools Date documentation
 */
+
+const ageCalculator = function (date) {
+    
+}
