@@ -8,3 +8,16 @@ Some example inputs and outputs would look like the below:
 
 [20, 50, 12, 6, 14, 8] should return [6, 50]
 */
+
+
+const highestAndLowest = function (arr) {
+    let sortedArray = arr.sort((a, b) => (a - b))
+    // sort() sorts alphabetically so use a sort function to sort in numerical order
+    let returnArray = [sortedArray[0], sortedArray[sortedArray.length-1]]
+    console.log("Input array: " + arr)
+    console.log("Sorted array: " + sortedArray)
+    console.log("Highest and Lowest values: " + returnArray)
+}
+
+console.log(highestAndLowest([2, 4, 1, 0, 2, -1]))
+console.log(highestAndLowest([20, 50, 12, 6, 14, 8]))
