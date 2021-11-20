@@ -16,6 +16,13 @@ W3Schools Date documentation
 */
 
 const ageCalculator = function (date) {
-
+    let inputDate = new Date(date)
+    let currentDate = new Date
+    let elapsed = currentDate - inputDate // elapsed time in millliseconds
+    let years = elapsed / 1000 / 3600 / 24 / 365
+    console.log(`Total years elapsed since ${date}: ${Math.floor(years)}`)
 }
 
+
+ageCalculator('1990-01-01')
+ageCalculator('1972-12-04')

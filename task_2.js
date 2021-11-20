@@ -11,13 +11,15 @@ Some example inputs and outputs would look like the below:
 
 
 const highestAndLowest = function (arr) {
+    console.log("Input array: " + arr)
+
     let sortedArray = arr.sort((a, b) => (a - b))
     // sort() sorts alphabetically so use a sort function to sort in numerical order
-    let returnArray = [sortedArray[0], sortedArray[sortedArray.length-1]]
-    console.log("Input array: " + arr)
     console.log("Sorted array: " + sortedArray)
+
+    let returnArray = [sortedArray[0], sortedArray[sortedArray.length-1]]
     console.log("Highest and Lowest values: " + returnArray)
 }
 
-console.log(highestAndLowest([2, 4, 1, 0, 2, -1]))
-console.log(highestAndLowest([20, 50, 12, 6, 14, 8]))
+highestAndLowest([2, 4, 1, 0, 2, -1])
+highestAndLowest([20, 50, 12, 6, 14, 8])
